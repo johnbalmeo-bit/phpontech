@@ -1,0 +1,214 @@
+ /* Add your profile page specific styles here */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('images/backgroundsign.jpg') center/cover no-repeat fixed;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.45);
+      z-index: -1;
+    }
+    .profile-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .profile-avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #D35400;
+    }
+    
+    .profile-info h1 {
+      color: #D35400;
+      margin-bottom: 0.5rem;
+    }
+    
+    .profile-info p {
+      color: #6c757d;
+      margin-bottom: 1rem;
+    }
+    
+    .profile-stats {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #D35400;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    
+    .profile-recipes {
+      margin-top: 2rem;
+    }
+    
+    .profile-recipes h2 {
+      color: #D35400;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #D35400;
+    }
+    
+    .feed-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    
+    .feed-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      padding: 2rem 2rem 1.5rem 2rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #f0f0f0;
+    }
+    
+    .feed-header {
+      border-bottom: 1px solid #f3f3f3;
+      padding-bottom: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feed-img {
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    }
+    
+    .feed-title a:hover {
+      text-decoration: underline;
+    }
+    
+    .feed-actions button:hover {
+      color: #E67E22;
+    }
+    
+    .comment-form textarea:focus {
+      outline: 2px solid #D35400;
+    }
+    
+    .recipe-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .recipe-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .recipe-content {
+      padding: 1rem;
+    }
+    
+    .recipe-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #212529;
+    }
+    
+    .recipe-likes {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    
+    /* Navigation styles */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .nav-links a {
+      color: #212529;
+      text-decoration: none;
+      margin: 0 1rem;
+      position: relative;
+    }
+    
+    .nav-links a:hover {
+      color: #D35400;
+    }
+    
+    .profile-menu {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .dropdown-content a {
+      color: #212529;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }

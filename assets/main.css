@@ -1,0 +1,33 @@
+/* Main CSS for Linamnam */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.header, .footer {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:disabled {
+  background: #ccc;
+}
+.toast {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background: #323232;
+  color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  z-index: 9999;
+  display: none;
+}

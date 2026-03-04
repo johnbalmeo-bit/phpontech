@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+}
+  body {
+      font-family: 'Poppins', sans-serif;
+      background: url('images/backgroundsign.jpg') center/cover no-repeat fixed;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.45);
+      z-index: -1;
+    }
+    
+.main-container {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+.notifications-content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  flex-grow: 1;
+}
+
+.notification-types {
+  list-style: none;
+}
+
+.notification-types li {
+  margin-bottom: 0.75rem;
+}
+
+.notification-types a {
+  text-decoration: none;
+  color: var(--dark);
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.notification-types a:hover, .notification-types a.active {
+  background-color: rgba(211, 84, 0, 0.1);
+  color: var(--logo-dark-orange);
+}
+
+.notification-list {
+  margin-top: 2rem;
+}
+
+.notification {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.notification:hover {
+  background-color: rgba(211, 84, 0, 0.05);
+}
+
+.notification-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notification-details {
+  flex-grow: 1;
+}
+
+.notification-details p {
+  margin: 0;
+}
+
+.notification-time {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.profile-menu {
+  position: relative;
+  display: inline-block;
+  z-index: 1100;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1200;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}

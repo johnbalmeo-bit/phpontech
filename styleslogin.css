@@ -1,0 +1,198 @@
+root {
+      --primary: #e63946;
+      --secondary: #D35400;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+      --logo-orange: #E67E22;
+      --logo-dark-orange: #D35400;
+      --logo-brown: #7E5109;
+      --error-color: #e63946;
+      --success-color: #2ecc71;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('images/backgroundsign.jpg') center/cover no-repeat fixed;
+      color: var(--dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Background overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.45);
+      z-index: -1;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      height: 80px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-name {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--logo-dark-orange);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--logo-dark-orange);
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      margin: 2rem auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: var(--logo-dark-orange);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--logo-brown);
+      transform: translateY(-2px);
+    }
+
+    .error {
+      color: var(--error-color);
+      margin-bottom: 1rem;
+      text-align: center;
+      padding: 0.5rem;
+      background-color: rgba(230, 57, 70, 0.1);
+      border-radius: 5px;
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .register-link a {
+      color: var(--logo-dark-orange);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .login-container {
+        margin-top: 1rem;
+        padding: 1.5rem;
+      }
+    }
